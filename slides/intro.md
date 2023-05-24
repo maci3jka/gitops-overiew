@@ -6,13 +6,10 @@
 ### Plan
 
 - Intro <!-- .element: class="fragment" -->
-- About Terraform <!-- .element: class="fragment" -->
-- About HCL <!-- .element: class="fragment" -->
-- Top level blocks <!-- .element: class="fragment" -->
-- Remote State <!-- .element: class="fragment" -->
-- Debugging <!-- .element: class="fragment" -->
+- About Git <!-- .element: class="fragment" -->
+- About GitOps <!-- .element: class="fragment" -->
+- What Problems GitOps solves <!-- .element: class="fragment" -->
 - Demo <!-- .element: class="fragment" -->
-- Tricks and pitfalls <!-- .element: class="fragment" -->
 - Closing <!-- .element: class="fragment" -->
 
 [comment]: <> (----)
