@@ -3,7 +3,7 @@ Before we dig into GitOps we need to understand a DevOps is
 
 ----
 
-### What is DevOps
+### What is DevOps?
 
 - DevOps is a methodology in the software development and IT industry.<!-- .element: class="fragment" --> 
 - Used as a set of practices and tools, DevOps integrates and automates the work of software development (Dev) and IT operations (Ops).<!-- .element: class="fragment" -->
@@ -32,8 +32,8 @@ Before we dig into GitOps we need to understand a DevOps is
 
 - Reduce failures and time to recovery<!-- .element: class="fragment" -->
 - Better quality software and services<!-- .element: class="fragment" -->
-- Faster, more consistent, service delivery<!-- .element: class="fragment" -->
-- Reduce unplanned work, focus on value<!-- .element: class="fragment" -->
+- Faster, more consistent service delivery<!-- .element: class="fragment" -->
+- Reduce unplanned work<!-- .element: class="fragment" -->
 - Deliver customer-centric solutions<!-- .element: class="fragment" -->
 - Rapid innovation<!-- .element: class="fragment" -->
 

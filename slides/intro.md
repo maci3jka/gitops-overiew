@@ -7,7 +7,8 @@
 ### Plan
 
 - Intro <!-- .element: class="fragment" -->
-- About Contonous Deployment <!-- .element: class="fragment" -->
+- About DevOps<!-- .element: class="fragment" -->
+- About Continuous Deployment <!-- .element: class="fragment" -->
 - About Git <!-- .element: class="fragment" -->
 - About GitOps <!-- .element: class="fragment" -->
 - Demo <!-- .element: class="fragment" -->
@@ -59,9 +60,9 @@ Maciek is a Cloud Engineer at VirtusLab with over five years of experience. He s
 
 Later, Maciek took on the role of an admin managing the company’s servers and resources in public clouds.
 
-Then he worked as a developer in a team creating tooling for around 1000 users. Currently, he is developing the IaaC platform on Azure.
+Then he worked as a developer in a team creating tooling for around 1000 users. Next, took role is developing the IaaC platform on Azure.
 
-Now developing in golang.
+Now developing in Golang.
 </div>
 
 
@@ -73,7 +74,7 @@ Now developing in golang.
 
 ----
 
-### What is GitOps
+### What is GitOps?
 
 GitOps is a technique to implement Continuous Delivery<!-- .element: class="fragment" -->
 
@@ -82,7 +83,7 @@ The core idea of GitOps is having a Git repository that always contains declarat
 If you want to deploy a new application or update an existing one, you only need to update the repository - the automated process handles everything else. It’s like having cruise control for managing your applications in production.<!-- .element: class="fragment" -->
 
 ----
-#### What problems GitOps solves
+### What problems GitOps solves
 
 - Deploy Faster More Often <!-- .element: class="fragment" -->
 - Easy and Fast Error Recovery <!-- .element: class="fragment" -->
@@ -92,7 +93,7 @@ If you want to deploy a new application or update an existing one, you only need
 
 ----
 
-#### GitOps popularity 
+### GitOps popularity 
 
 ![img.png](/assets/gitops_trends.png)
 

@@ -18,6 +18,7 @@ Before we dig into we need to brefly overview what is git and its features.
 
 - files are gathered snapshot of code at given time called commit<!-- .element: class="fragment" -->
 - each commit consist of<!-- .element: class="fragment" -->
+  - files - in given state<!-- .element: class="fragment" -->
   - message - given by author<!-- .element: class="fragment" -->
   - author data - mail, name<!-- .element: class="fragment" -->
   - sha - unique code<!-- .element: class="fragment" -->
