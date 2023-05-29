@@ -1,6 +1,11 @@
-# DEMO?
+### Demo
+
+requirements:
+- azure account - trial version free quota
+   -  account will be provided for students during course.
+- github account - free
 
 ----
-
-* [repo](https://github.com/maci3jka/cloud-native)
-* [Azure](https://portal.azure.com/#view/HubsExtension/BrowseResourceGroups)
+links:
+- asd 
+- asdf

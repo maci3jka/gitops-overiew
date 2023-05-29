@@ -1,14 +1,15 @@
+[//]: # ()
+[//]: # (![exit.JPG]&#40;/assets/Glass_exit_sign.jpg&#41;<!-- .element height="60%" width="60%" -->)
 
-![exit.JPG](/assets/Glass_exit_sign.jpg)<!-- .element height="60%" width="60%" -->
-
-----
+[//]: # ()
+[//]: # (----)
 
 ### Plan
 
 - Intro <!-- .element: class="fragment" -->
+- About Contonous Deployment <!-- .element: class="fragment" -->
 - About Git <!-- .element: class="fragment" -->
 - About GitOps <!-- .element: class="fragment" -->
-- What Problems GitOps solves <!-- .element: class="fragment" -->
 - Demo <!-- .element: class="fragment" -->
 - Closing <!-- .element: class="fragment" -->
 
@@ -68,20 +69,31 @@ Now developing in golang.
 
 ![maciek.JPG](/assets/_DSF8414.JPG)<!-- .element height="50%" width="50%" -->
 
-</div> 
+</div>
 
 ----
-### About Virtusity
 
-![virtusity.JPG](https://virtusity.com/wp-content/themes/virtusity/assets/img/virtusity_logo.png)
+### What is GitOps
+
+GitOps is a technique to implement Continuous Delivery<!-- .element: class="fragment" -->
+
+The core idea of GitOps is having a Git repository that always contains declarative descriptions of the infrastructure currently desired in the production environment and an automated process to make the production environment match the described state in the repository. <!-- .element: class="fragment" -->
+
+If you want to deploy a new application or update an existing one, you only need to update the repository - the automated process handles everything else. It’s like having cruise control for managing your applications in production.<!-- .element: class="fragment" -->
 
 ----
-#### Why learn Terraform 
+#### What problems GitOps solves
 
-<iframe data-src="https://survey.stackoverflow.co/2022/#top-paying-technologies-other-tools" class="r-stretch"  ></iframe>
+- Deploy Faster More Often <!-- .element: class="fragment" -->
+- Easy and Fast Error Recovery <!-- .element: class="fragment" -->
+- Easier Credential Management <!-- .element: class="fragment" -->
+- Self-documenting Deployments <!-- .element: class="fragment" -->
+- Shared Knowledge in Teams <!-- .element: class="fragment" -->
 
 ----
-#### Why in Poland
-[terraform in justjoin.it](https://justjoin.it/?q=Terraform%40skill&tab=with-salary&sort=salaryg)
 
-[comment]: <> (<iframe data-src="https://justjoin.it/?q=Terraform%40skill&tab=with-salary&sort=salary" class="r-stretch"  ></iframe>)
+#### GitOps popularity 
+
+![img.png](/assets/gitops_trends.png)
+
+
