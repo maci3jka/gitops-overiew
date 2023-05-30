@@ -26,17 +26,6 @@ resource "azurerm_kubernetes_cluster" "example" {
 
 }
 
-#output "client_certificate" {
-#  value     = azurerm_kubernetes_cluster.example.kube_config.0.client_certificate
-#  sensitive = true
-#}
-#
-#output "kube_config" {
-#  value = azurerm_kubernetes_cluster.example.kube_config_raw
-#
-#  sensitive = true
-#}
-
 locals {
   apphanumeric=replace(random_pet.frendly_name.id,"-","")
 }
@@ -52,7 +41,6 @@ resource "azurerm_role_assignment" "example" {
   principal_id                     = azurerm_kubernetes_cluster.example.kubelet_identity[0].object_id
   role_definition_name             = "AcrPull"
   scope                            = azurerm_container_registry.example.id
-#  skip_service_principal_aad_check = true
 }
 
 data "azuread_client_config" "current" {}
@@ -111,17 +99,9 @@ output "REGISTRY_PASSWORD" {
   value = azurerm_container_registry.example.admin_password
   sensitive = true
 }
-
-#'{"clientId":"${{ secrets.CLIENT_ID }}","clientSecret":"${{ secrets.CLIENT_SECRET }}","subscriptionId":"${{ secrets.SUBSCRIPTION_ID }}","tenantId":"${{ secrets.TENANT_ID }}"}'
-#
-#client-id: ${{ secrets.AZURE_CLIENT_ID }}
-#tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-#subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-
-provider "kubernetes" { // this won't work
-  host                   = azurerm_kubernetes_cluster.example.kube_config.0.host
-
-  client_certificate     = base64decode(azurerm_kubernetes_cluster.example.kube_config.0.client_certificate)
-  client_key             = base64decode(azurerm_kubernetes_cluster.example.kube_config.0.client_key)
-  cluster_ca_certificate = base64decode(azurerm_kubernetes_cluster.example.kube_config.0.cluster_ca_certificate)
+output "login_command" {
+  value = "az aks get-credentials --resource-group ${azurerm_resource_group.example.name} --name ${azurerm_kubernetes_cluster.example.name}"
+}
+output "after_command" {
+  value = "kubectl apply -f binding.yaml"
 }
